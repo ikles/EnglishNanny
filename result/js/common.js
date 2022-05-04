@@ -51,22 +51,19 @@ else {
 
 
 
-let timerId = setInterval(() => $('.slider-3').css('transform', 'translateX(-1px)'), 1000);
 
-
-$('.slider-1').slick({
+$('.reviews__slider').slick({
   infinite: true,    
-  speed: 6900,
+  speed: 600,
   slidesToScroll: 1,
-  autoplay: true,    
-  slidesToShow: 4,
-  cssEase: 'linear',
-  autoplay: true,
+  autoplay: false,    
+  slidesToShow: 1,  
   autoplaySpeed: 0,  
-  arrows: false,
+  arrows: true,
   pauseOnHover: true,  
 });
 
+/*
 $('.slider-2').slick({
   infinite: true,    
   speed: 6900,
@@ -79,7 +76,7 @@ $('.slider-2').slick({
   rtl: true ,
   arrows: false,
   pauseOnHover: true,
-})
+})*/
 
 
 /************************************/
@@ -100,6 +97,19 @@ $('.eye-3').click(function (e) {
 
 /************************************/
 
+
+function tabs(element) {    
+  $(element).find('.tabs__list-item').click(function () {
+    $(element).find('.tabs__list-item').removeClass('active');
+    $(this).addClass('active');    
+    let num = $(this).index();
+    $(element).find('.tabs__content-list-item').removeClass('active');
+    $(element).find('.tabs__content-list-item').eq(num).addClass('active');    
+  });
+}
+
+
+tabs('.ser__tabs');
 
 
 function popup(openLink, windowEl, closeEl) {  
