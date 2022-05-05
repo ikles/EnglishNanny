@@ -25,7 +25,10 @@
     <header class="header">
       <div class="contain">
         <div class="header__row">
-          <a href="#" class="logo"><img src="img/logo.svg" class="logo__img" /></a>
+          <a href="#" class="logo">
+            <img class="logo__img" src="img/logo.svg" />
+            <img class="logo__img logo__img-pda" src="img/logo-pda.svg"  />
+          </a>
           <div class="header__mnu-w">
             <ul class="header__mnu">
               <li class="header__mnu-li"><a href="#" class="header__mnu-a">Почему мы</a></li>
@@ -63,10 +66,13 @@
                 <a href="#" class="btn banner__btn _red">Продать</a></div>
                 <div class="banner__tags">
                   <a href="#" class="banner__tag"># Арендовать</a>
-                  <a href="#" class="banner__tag _blue"># Арендовать</a>
+                  <a href="#" class="banner__tag _blue"># Сдать в аренду</a>
                 </div>
               </div>
-              <div class="banner__r"><img src="img/banner-iphone.png" class="banner__img" /></div>
+              <div class="banner__r">
+                <img class="banner__iphone" src="img/banner-iphone.png" class="banner__img" />
+                <img class="banner__iphone banner__iphone-2" src="img/banner-iphone2.png" class="banner__img" />
+              </div>
             </div>
           </div>
         </div>
@@ -100,632 +106,739 @@
         </section>
         <section class="cities section">
           <div class="contain">
-            <h2 class="heading-2">Множество объектов в разных городах</h2>
+            <h2 class="heading-2">Множество объектов <br class="show-640"> в разных городах</h2>
             <div class="cities-cat__row">
               <div class="cities-cat__col">
                 <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat1.svg" /></span><span class="cities-cat__txt">Городская недвижимость</span>
-                </a>
-              </div>
-              <div class="cities-cat__col">
-                <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat2.svg" /></span><span class="cities-cat__txt">Загородная недвижимость</span>
-                </a>
-              </div>
-              <div class="cities-cat__col">
-                <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat3.svg" /></span>
-                  <span class="cities-cat__txt">
-                    Торговая<br />
-                    недвижимость
+                  <span class="cities-cat__img-w">
+                    <img src="img/cities-cat1.svg" />
                   </span>
+                  <span class="cities-cat__txt">Городская <br> недвижимость</span>
                 </a>
               </div>
               <div class="cities-cat__col">
                 <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat4.svg" /></span>
-                  <span class="cities-cat__txt">
-                    Офисная<br />
-                    недвижимость
-                  </span>
-                </a>
-              </div>
-              <div class="cities-cat__col">
-                <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat5.svg" /></span>
-                  <span class="cities-cat__txt">
-                    Складская<br />
-                    недвижимость
-                  </span>
-                </a>
-              </div>
-              <div class="cities-cat__col">
-                <a href="#" class="cities-cat__it">
-                  <span class="cities-cat__img-w"><img src="img/cities-cat6.svg" /></span><span class="cities-cat__txt">Яхты</span>
-                </a>
-              </div>
-            </div>
-            <div class="cities-items">
-              <div class="cities-items__col">
-                <div class="cities-items__it-big">
-                  <img src="img/cities-it1.jpg" class="cities-items__it-img" />
-                  <div class="cities-items__content">
-                    <div class="cities-items__tit-big">Дубай</div>
-                    <ul class="cities-items__list">
-                      <li><a href="#">Дубай Марина</a></li>
-                      <li><a href="#">Аль-Сафа</a></li>
-                      <li><a href="#">Бизнес Бэй</a></li>
-                      <li><a href="#">Анантара</a></li>
-                      <li><a href="#">Пальма Джумейра </a></li>
-                      <li><a href="#">Bluewaters</a></li>
-                      <li><a href="#">Джумейра Бич Резиденс</a></li>
+                  <span class="cities-cat__img-w">
+                    <img src="img/cities-cat2.svg" /></span>
+                    <span class="cities-cat__txt">Загородная <br> недвижимость</span>
+                  </a>
+                </div>
+                <div class="cities-cat__col">
+                  <a href="#" class="cities-cat__it">
+                    <span class="cities-cat__img-w">
+                      <img src="img/cities-cat3.svg" />
+                    </span>
+                    <span class="cities-cat__txt">
+                      Торговая<br />
+                      недвижимость
+                    </span>
+                  </a>
+                </div>
+                <div class="cities-cat__col">
+                  <a href="#" class="cities-cat__it">
+                    <span class="cities-cat__img-w">
+                      <img src="img/cities-cat4.svg" />
+                    </span>
+                    <span class="cities-cat__txt">
+                      Офисная<br />
+                      недвижимость
+                    </span>
+                  </a>
+                </div>
+                <div class="cities-cat__col">
+                  <a href="#" class="cities-cat__it">
+                    <span class="cities-cat__img-w">
+                      <img src="img/cities-cat5.svg" />
+                    </span>
+                    <span class="cities-cat__txt">
+                      Складская<br />
+                      недвижимость
+                    </span>
+                  </a>
+                </div>
+                <div class="cities-cat__col">
+                  <a href="#" class="cities-cat__it">
+                    <span class="cities-cat__img-w">
+                      <img src="img/cities-cat6.svg" /></span>
+                      <span class="cities-cat__txt">Яхты</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="cities-items">
+                  <div class="cities-items__col">
+                    <div class="cities-items__it-big">
+                      <img src="img/cities-it1.jpg" class="cities-items__it-img" />
+                      <div class="cities-items__content">
+                        <div class="cities-items__tit-big">Дубай</div>
+                        <ul class="cities-items__list">
+                          <li><a href="#">Дубай Марина</a></li>
+                          <li><a href="#">Аль-Сафа</a></li>
+                          <li><a href="#">Бизнес Бэй</a></li>
+                          <li><a href="#">Анантара</a></li>
+                          <li><a href="#">Пальма Джумейра </a></li>
+                          <li><a href="#">Bluewaters</a></li>
+                          <li><a href="#">Джумейра Бич Резиденс</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cities-items__col">
+                    <div class="cities-items__row">
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it2.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Канны</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it3.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Москва</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it4.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Майями</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it5.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Лимасол</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it6.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Ибица</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it7.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Монако</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it8.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Женева</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it9.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Марбелья</div>
+                      </a>
+                      <a href="#" class="cities-items__it">
+                        <img src="img/cities-it10.jpg" class="cities-items__it-img" />
+                        <div class="cities-items__tit">Лондон</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="show-objects">
+                  <div class="show-objects__col-1">
+                    <div class="show-objects-img-w">
+
+                      <picture class="posts-slide">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="img/show-objects-phone2.png">
+                          <img type="image/jpeg" src="img/show-objects-phone.png" class="show-objects-img" />
+                        </picture>
+
+                        <!--img src="img/show-objects-phone.png" class="show-objects-img" /-->
+                      </div>
+                      <div class="show-objects__col-2">
+                        <div class="show-objects__tit">Онлайн-показ объектов</div>
+                        <div class="show-objects__subtit">Дубай, Лимасол, вся Швейцария</div>
+                        <div class="show-objects__text">Просто оставьте свой номер и наш сотрудник покажет Вам по видеосвязи все детали интересующего вас объекта!</div>
+                      </div>
+                    </div>
+                    <form class="form">
+                      <div class="show-objects__col-3">                
+                        <input class="input-text" type="text" placeholder="Ваше Имя" name="name" required />
+                        <input class="input-text" type="text" placeholder="Телефон" name="phone" required />
+                        <select name="city" class="form__select">
+                          <option value="Город">Город</option>
+                          <option value="Москва">Москва</option>
+                          <option value="Омск">Омск</option>
+                        </select>
+                        <div class="form__select-arrow"></div>                
+                      </div>
+                      <div class="show-objects__col-4">
+                        <div class="form__messengers">
+                          <label class="form__messenger">                    
+                            <input type="radio" name="mess" checked>
+                            <div class="messenger__img-w green">
+                              <img src="img/mess1.svg" />                      
+                            </div>
+                            <div class="messenger__text">Звонок</div>
+                          </label>
+                          <label class="form__messenger">
+                            <input type="radio" name="mess">
+                            <div class="messenger__img-w green">
+                              <img class="messenger__wa" src="img/mess2.svg" />
+                            </div>
+                            <div class="messenger__text">WhatsApp</div>
+                          </label>
+                          <label class="form__messenger ">
+                            <input type="radio" name="mess">
+                            <div class="messenger__img-w blue">
+                              <img class="messenger__tg" src="img/mess3.svg" />
+                            </div>
+                            <div class="messenger__text">Telegram</div>
+                          </label>
+                          <label class="form__messenger ">
+                            <input type="radio" name="mess">
+                            <div class="messenger__img-w violet">
+                              <img src="img/mess4.svg" />
+                            </div>
+                            <div class="messenger__text">Viber</div>
+                          </label>
+                        </div>
+                        <label class="label">
+                          <input type="checkbox" name="conf" checked>                  
+                          <span></span>
+                          <div>Согласие на обработку персональных данных</div>
+                        </label>
+                        <button class="btn form__btn">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>        
+              </section>
+
+              <section class="services section">
+                <div class="contain">
+                  <div class="services__heading heading-2">Услуги</div>
+                  <div class="ser__tabs tabs">
+                    <ul class="services__tabs-ul tabs__list">
+                      <li class="services__tabs-li tabs__list-item active">Собственнику</li>
+                      <li class="services__tabs-li tabs__list-item">Покупателю / Инвестору</li>
+                      <li class="services__tabs-li tabs__list-item">Арендатору</li>
                     </ul>
+                    <ul class="services__tabs-content abs__content-list">
+                      <li class="services__tabs-content-item tabs__content-list-item active">
+
+
+                        <div class="services__content-row">
+                          <div class="services__content-left services__content-col">
+                           <a href="#" class="services__tabs-l">
+                            <div class="services__tabs-img-w">
+                              <img src="img/ser-b.svg" class="" />
+                            </div>
+                            <div class="services__tabs-text">
+                              <div class="services__tabs-title">
+                                <strong>Управление недвижимостью в Дубаи</strong> <br>
+                                с доходностью до 17%
+                              </div>
+                              <ul class="services__tabs-list">
+                                <li>— Предоставление домашнего персонала" (повара, охранники, няни, водители)</li>
+                                <li>— Продажа по закрытой базе данных клиентов English Nanny</li>
+                                <li>— Продажа в открытых источниках</li>
+                              </ul>
+                            </div>
+
+                          </a>
+
+                        </div><!--left-->
+
+
+
+                        <div class="services__content-right services__content-col">
+
+                          <div class="services__tabs-r">
+                            <a href="#" class="services__tabs-link">
+                              <div class="services__tabs-link-img-w"><img src="img/ser-b-11.svg" /></div>
+                              <div class="services__tabs-link-text">Представление интересов собственников</div>
+                            </a>
+                            <a href="#" class="services__tabs-link">
+                              <div class="services__tabs-link-img-w"><img src="img/ser-b-2.svg" /></div>
+                              <div class="services__tabs-link-text">Привлечение финансирования</div>
+                            </a>
+                            <a href="#" class="services__tabs-link">
+                              <div class="services__tabs-link-img-w"><img src="img/ser-b-3.svg" /></div>
+                              <div class="services__tabs-link-text">Управление строительными проектами</div>
+                            </a>
+                            <a href="#" class="services__tabs-link">
+                              <div class="services__tabs-link-img-w"><img src="img/ser-b-4.svg" /></div>
+                              <div class="services__tabs-link-text">Консалтинг</div>
+                            </a>
+                            <a href="#" class="services__tabs-link">
+                              <div class="services__tabs-link-img-w"><img src="img/ser-b-5.svg" /></div>
+                              <div class="services__tabs-link-text">Оценка</div>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div><!--row-->
+
+
+
+                    </li>
+                    <li class="services__tabs-content-item tabs__content-list-item">
+
+
+
+                      <div class="services__content-row">
+                        <div class="services__content-left services__content-col">
+                          <div class="services__tabs-l services__tabs-l--noborder">
+                            <a href="#" class="services__tabs-link-2">
+                              <div class="services__tabs-img-w2"><img src="img/ser-bb-1.svg" /></div>
+                              <div class="services__tabs-title-2">
+                                <strong>Получение лучшей цены</strong> <br />
+                                за счет нашего вознаграждения
+                              </div>
+                            </a>
+                            <a href="#" class="services__tabs-link-2">
+                              <div class="services__tabs-img-w2"><img src="img/ser-bb-2.svg" /></div>
+                              <div class="services__tabs-title-2">
+                                <strong>Доступ к закрытому списку</strong> <br />
+                                объектов English Nanny
+                              </div>
+                            </a>
+                          </div>
+                        </div><!--col-->
+                        <div class="services__content-right services__content-col">
+                         <div class="services__tabs-r">
+                          <a href="#" class="services__tabs-link">
+                            <div class="services__tabs-link-img-w"><img src="img/portfl.svg" /></div>
+                            <div class="services__tabs-link-text">Покупка готового арендного бизнеса</div>
+                          </a>
+                          <a href="#" class="services__tabs-link">
+                            <div class="services__tabs-link-img-w"><img src="img/btci.svg" /></div>
+                            <div class="services__tabs-link-text">Покупка в любой валюте, в том числе криптовалюте
+                            </div>
+                          </a>
+                          <a href="#" class="services__tabs-link">
+                            <div class="services__tabs-link-img-w"><img src="img/ser-b-5.svg" /></div>
+                            <div class="services__tabs-link-text">Покупка с последующей арендой</div>
+                          </a>
+                          <a href="#" class="services__tabs-link">
+                            <div class="services__tabs-link-img-w"><img src="img/housei.svg" /></div>
+                            <div class="services__tabs-link-text">Подбор ликвидных объектов
+                            </div>
+                          </a>
+                          <a href="#" class="services__tabs-link">
+                            <div class="services__tabs-link-img-w"><img src="img/ser-b-5.svg" /></div>
+                            <div class="services__tabs-link-text">Получение ВНЖ и открытие счетов и компаний</div>
+                          </a>
+                        </div>
+                      </div><!--col-->
+                    </div><!--row-->
+
+
+
+                  </li>
+                  <li class="services__tabs-content-item tabs__content-list-item">
+                    <div class="services__tabs-row">
+                      <a href="#" class="services__tabs-link-33">
+                        <div class="services__tabs-img-w3"><img src="img/ser-bbb-1.svg" /></div>
+                        <div class="services__tabs-title-3">
+                          Подбор оптимального объекта <br />
+                          в аренду
+                        </div>
+                      </a>
+                      <a href="#" class="services__tabs-link-33">
+                        <div class="services__tabs-img-w3"><img src="img/ser-bbb-2.svg" /></div>
+                        <div class="services__tabs-title-3">
+                          Консъерж сервис
+                        </div>
+                      </a>
+                      <a href="#" class="services__tabs-link-33">
+                        <div class="services__tabs-img-w3"><img src="img/ser-bbb-3.svg" /></div>
+                        <div class="services__tabs-title-3">
+                          Оплата в любой валюте, <br>в том числе криптовалюте
+                        </div>
+                      </a>
+                    </div>
+
+                  </li>
+                </ul>
+
+              </div>
+
+
+
+            </div>
+          </section>
+
+
+          <section class="actual section">
+            <div class="contain">
+              <div class="actual__heading heading-2">Актуальные предложения</div>
+              <div class="actual__w">
+                <div class="actual__content">
+                  <div class="actual__row-1">
+                    <a href="#" class="actual__item">
+                      @@include('var/_actual__item.html', {
+                        "img": "img/act-b-1.jpg"
+                      })
+
+                    </a>
+                    <a href="#" class="actual__item">
+                      @@include('var/_actual__item.html', {
+                        "img": "img/act-b-2.jpg"
+                      })
+
+                    </a>
+                  </div>
+                  <div class="actual__row-2">
+                    <a href="#" class="actual__item actual__item--small">
+                      @@include('var/_actual__item.html', {
+                        "img": "img/act-m-1.jpg"
+                      })                  
+                    </a>
+                    <a href="#" class="actual__item actual__item--small">
+                      @@include('var/_actual__item.html', {
+                        "img": "img/act-m-2.jpg"
+                      })                  
+                    </a>
+                    <a href="#" class="actual__item actual__item--small">
+                      @@include('var/_actual__item.html', {
+                        "img": "img/act-m-3.jpg"
+                      })                  
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div class="cities-items__col">
-                <div class="cities-items__row">
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it2.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Канны</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it3.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Москва</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it4.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Майями</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it5.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Лимасол</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it6.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Ибица</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it7.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Монако</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it8.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Женева</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it9.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Марбелья</div>
-                  </a>
-                  <a href="#" class="cities-items__it">
-                    <img src="img/cities-it10.jpg" class="cities-items__it-img" />
-                    <div class="cities-items__tit">Лондон</div>
-                  </a>
+                <div class="actual__btn-w">
+                  <a href="#" class="btn-o actual__btn">Перейти в каталог</a>
                 </div>
               </div>
             </div>
-            <div class="show-objects">
-              <div class="show-objects-img-w"><img src="img/show-objects-phone.png" class="show-objects-img" /></div>
-              <div class="show-objects__col-2">
-                <div class="show-objects__tit">Онлайн-показ объектов</div>
-                <div class="show-objects__subtit">Дубай, Лимасол, вся Швейцария</div>
-                <div class="show-objects__text">Просто оставьте свой номер и наш сотрудник покажет Вам по видеосвязи все детали интересующего вас объекта!</div>
-              </div>
-              <form class="form">
-                <div class="show-objects__col-3">                
-                  <input class="input-text" type="text" placeholder="Ваше Имя" name="name" required />
-                  <input class="input-text" type="text" placeholder="Телефон" name="phone" required />
-                  <select name="city" class="form__select">
-                    <option value="Город">Город</option>
-                    <option value="Москва">Москва</option>
-                    <option value="Омск">Омск</option>
-                  </select>
-                  <div class="form__select-arrow"></div>                
-                </div>
-                <div class="show-objects__col-4">
-                  <div class="form__messengers">
-                    <label class="form__messenger">                    
-                      <input type="radio" name="mess" checked>
-                      <div class="messenger__img-w green">
-                        <img src="img/mess1.svg" />                      
-                      </div>
-                      <div class="messenger__text">Звонок</div>
-                    </label>
-                    <label class="form__messenger">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w green">
-                        <img class="messenger__wa" src="img/mess2.svg" />
-                      </div>
-                      <div class="messenger__text">WhatsApp</div>
-                    </label>
-                    <label class="form__messenger ">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w blue">
-                        <img class="messenger__tg" src="img/mess3.svg" />
-                      </div>
-                      <div class="messenger__text">Telegram</div>
-                    </label>
-                    <label class="form__messenger ">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w violet">
-                        <img src="img/mess4.svg" />
-                      </div>
-                      <div class="messenger__text">Viber</div>
-                    </label>
+          </section>
+
+
+          <section class="pluses section">
+            <div class="contain">
+
+              <div class="pluses__heading heading-2">Плюсы покупки у нас</div>
+
+              <div class="pluses__item--big">
+                <a href="#" class="pluses__img-w-1">
+                  <img src="img/pl-img-1.jpg" class="pluses__img" />
+                  <div class="pluses__icon-w"><img src="img/pl-1.svg" class="pluses__icon" /></div>
+                </a>
+                <div class="pl-it-1-r">
+                  <div class="pl-it-1-r__inn">
+                    <div class="pluses__title--big">Экслюзив от ведущих <br> застройщиков Дубая и Кипра.</div>
+                    <div class="pluses__text">Наша лицензированная кипрская компания по подбору недвижимости вернет Вам 1% кешбек с каждого платежа сделанного на счет дубайского застройщика и 2% с каждого сделанного на счет кипрского.</div>
+                    <div class="pluses__brands">
+                      <a href="#" class="pluses__brand"><img src="img/dev-1.png" /></a>
+                      <a href="#" class="pluses__brand"><img src="img/dev-2.png" /></a>
+                      <a href="#" class="pluses__brand"><img src="img/dev-3.png" /></a>
+                      <a href="#" class="pluses__brand"><img src="img/dev-4.png" /></a>
+                      <a href="#" class="pluses__brand"><img src="img/dev-5.png" /></a>
+                    </div>
                   </div>
-                  <label class="label">
-                    <input type="checkbox" name="conf" checked>                  
-                    <span></span>
-                    <div>Согласие на обработку персональных данных</div>
+                </div>
+              </div>
+
+              <div class="pluses__row pluses__row-1">
+                <div class="pluses__col">
+                  <div class="pluses__item">
+                    <a href="#" class="pluses__img-w">
+                      <img src="img/pl-img-2.jpg" class="pluses__img" />
+                      <div class="pluses__icon-w"><img src="img/pl-2.svg" class="pluses__icon" /></div>
+                    </a>
+                    <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
+                  </div>
+                </div>
+                <div class="pluses__col">
+                  <div class="pluses__item">
+                    <a href="#" class="pluses__img-w">
+                      <img src="img/pl-img-3.jpg" class="pluses__img" />
+                      <div class="pluses__icon-w"><img src="img/pl-3.svg" class="pluses__icon" /></div>
+                    </a>
+                    <a href="#" class="pluses__title">Скидка на подбор домашнего персонала в новую недвижимость</a>
+                  </div>
+                </div>
+              </div><!--pluses__row-1-->
+
+              <div class="pluses__row pluses__row-2">
+                <div class="pluses__col-33">
+                  <div class="pluses__item">
+                    <a href="#" class="pluses__img-w">
+                      <img src="img/pl-img-4.jpg" class="pluses__img" />
+                      <div class="pluses__icon-w"><img src="img/pl-4.svg" class="pluses__icon" /></div>
+                    </a>
+                    <a href="#" class="pluses__title">Эксклюзивные, внерыночные объекты</a>
+                  </div>
+                </div>
+                <div class="pluses__col-33">
+                  <div class="pluses__item">
+                    <a href="#" class="pluses__img-w">
+                      <img src="img/pl-img-5.jpg" class="pluses__img" />
+                      <div class="pluses__icon-w"><img src="img/pl-5.svg" class="pluses__icon" /></div>
+                    </a>
+                    <a href="#" class="pluses__title">Организуем Вам общение напрямую с собственником</a>
+                  </div>
+                </div>
+                <div class="pluses__col-33">
+                  <div class="pluses__item">
+                    <a href="#" class="pluses__img-w">
+                      <img src="img/pl-img-6.jpg" class="pluses__img" />
+                      <div class="pluses__icon-w"><img src="img/pl-6.svg" class="pluses__icon" /></div>
+                    </a>
+                    <a href="#" class="pluses__title">Умеем подбирать правильные активы для краткосрочной и долгосрочной аренды</a>
+                  </div>
+                </div>
+              </div><!--pluses__row-1-->
+
+
+              <form class="plusform__form">
+
+                <div class="plusform__tabs-control">
+                  <label>                
+                    <input type="radio" name="subject" checked>
+                    <span>Продам</span>
                   </label>
-                  <button class="btn form__btn">Отправить</button>
+                  <label>                
+                    <input type="radio" name="subject" >
+                    <span>Сдам в аренду</span>
+                  </label>
+                  <label>                
+                    <input type="radio" name="subject" >
+                    <span>Куплю</span>
+                  </label>
+                  <label>                
+                    <input type="radio" name="subject" >
+                    <span>Возьму в аренду</span>
+                  </label>
+
+                </div>
+
+                <div class="plusform__row">
+                  <div class="plusform__row-inn">
+
+                    <div class="plusform__col-1">                
+                      <input class="input-text" type="text" placeholder="Ваше Имя" name="name" required />
+                      <input class="input-text" type="text" placeholder="Телефон" name="phone" required />
+                      <select name="city" class="form__select">
+                        <option value="Город">Город</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Омск">Омск</option>
+                      </select>
+                      <div class="form__select-arrow"></div>                
+                    </div>
+
+                    <div class="plusform__col-2">
+                      <textarea class="form__area" placeholder="Коротко опишите"></textarea>
+                    </div>
+
+                    <div class="plusform__col-3">
+                      <div class="form__messengers">
+                        <label class="form__messenger">                    
+                          <input type="radio" name="mess" checked>
+                          <div class="messenger__img-w green">
+                            <img src="img/mess1.svg" />                      
+                          </div>
+                          <div class="messenger__text">Звонок</div>
+                        </label>
+                        <label class="form__messenger">
+                          <input type="radio" name="mess">
+                          <div class="messenger__img-w green">
+                            <img class="messenger__wa" src="img/mess2.svg" />
+                          </div>
+                          <div class="messenger__text">WhatsApp</div>
+                        </label>
+                        <label class="form__messenger ">
+                          <input type="radio" name="mess">
+                          <div class="messenger__img-w blue">
+                            <img class="messenger__tg" src="img/mess3.svg" />
+                          </div>
+                          <div class="messenger__text">Telegram</div>
+                        </label>
+                        <label class="form__messenger ">
+                          <input type="radio" name="mess">
+                          <div class="messenger__img-w violet">
+                            <img src="img/mess4.svg" />
+                          </div>
+                          <div class="messenger__text">Viber</div>
+                        </label>
+                      </div>
+                      <label class="label">
+                        <input type="checkbox" name="conf" checked>                  
+                        <span></span>
+                        <div>Согласие на обработку персональных данных</div>
+                      </label>
+                      <button class="btn form__btn">Отправить</button>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section class="services section">
-        <div class="contain">
-          <div class="services__heading heading-2">Услуги</div>
-
-
-
-
-
-
-          <div class="ser__tabs tabs">
-
-
-            <ul class="services__tabs-ul tabs__list">
-              <li class="services__tabs-li tabs__list-item active">Собственнику</li>
-              <li class="services__tabs-li tabs__list-item">Покупателю / Инвестору</li>
-              <li class="services__tabs-li tabs__list-item">Арендатору</li>
-            </ul>
-
-
-            <ul class="services__tabs-content abs__content-list">
-              <li class="services__tabs-content-item tabs__content-list-item active">
-                <a href="#" class="services__tabs-l">
-                  <div class="services__tabs-img-w">
-                    <img src="img/ser-b.svg" class="" />
-                  </div>
-                  <div class="services__tabs-text">
-                    <div class="services__tabs-title">
-                      <strong>Управление недвижимостью в Дубаи</strong> <br>
-                      с доходностью до 17%
+          <section class="team section">
+            <div class="contain">
+              <div class="heading-2">Наша международная команда</div>
+              <div class="team__ceo">
+                <div class="team__img-w"><img src="img/team-1.png" /></div>
+                <div class="team__r">
+                  <div class="team__ceo-name">Валентин Гроголь</div>
+                  <div class="team__ceo-text">Мы обладаем глубокой экспертизой рынка элитной недвижимости и предоставляем полный спектр услуг агентства недвижимости в городах присутствия, включая юридические сопровождение</div>
+                  <div class="team__ceo-info">
+                    <div class="team__ceo-param">
+                      <div class="team__ceo-num">10 000 +</div>
+                      <div class="team__ceo-cap">уникальных платёжеспособных клиентов</div>
                     </div>
-                    <ul class="services__tabs-list">
-                      <li>— Предоставление домашнего персонала" (повара, охранники, няни, водители)</li>
-                      <li>— Продажа по закрытой базе данных клиентов English Nanny</li>
-                      <li>— Продажа в открытых источниках</li>
-                    </ul>
+                    <div class="team__ceo-param">
+                      <div class="team__ceo-num">10</div>
+                      <div class="team__ceo-cap">городов специализации</div>
+                    </div>
                   </div>
-                </a>
-                <div class="services__tabs-r">
-                  <a href="#" class="services__tabs-link">
-                    <div class="services__tabs-link-img-w"><img src="img/ser-b-11.svg" /></div>
-                    <div class="services__tabs-link-text">Представление интересов собственников</div>
-                  </a>
-                  <a href="#" class="services__tabs-link">
-                    <div class="services__tabs-link-img-w"><img src="img/ser-b-2.svg" /></div>
-                    <div class="services__tabs-link-text">Привлечение финансирования</div>
-                  </a>
-                  <a href="#" class="services__tabs-link">
-                    <div class="services__tabs-link-img-w"><img src="img/ser-b-3.svg" /></div>
-                    <div class="services__tabs-link-text">Управление строительными проектами</div>
-                  </a>
-                  <a href="#" class="services__tabs-link">
-                    <div class="services__tabs-link-img-w"><img src="img/ser-b-4.svg" /></div>
-                    <div class="services__tabs-link-text">Консалтинг</div>
-                  </a>
-                  <a href="#" class="services__tabs-link">
-                    <div class="services__tabs-link-img-w"><img src="img/ser-b-5.svg" /></div>
-                    <div class="services__tabs-link-text">Оценка</div>
-                  </a>
-                </div>
-              </li>
-              <li class="services__tabs-content-item tabs__content-list-item">22</li>
-              <li class="services__tabs-content-item tabs__content-list-item">33</li>
-            </ul>
-
-          </div>
-
-
-
-        </div>
-      </section>
-
-
-      <section class="actual section">
-        <div class="contain">
-          <div class="actual__heading heading-2">Актуальные предложения</div>
-          <div class="actual__w">
-            <div class="actual__content">
-              <div class="actual__row-1">
-                <a href="#" class="actual__item">
-                  @@include('var/_actual__item.html', {
-                    "img": "img/act-b-1.jpg"
-                  })
-                  
-                </a>
-                <a href="#" class="actual__item">
-                  @@include('var/_actual__item.html', {
-                    "img": "img/act-b-2.jpg"
-                  })
-                  
-                </a>
-              </div>
-              <div class="actual__row-2">
-                <a href="#" class="actual__item actual__item--small">
-                  @@include('var/_actual__item.html', {
-                    "img": "img/act-m-1.jpg"
-                  })                  
-                </a>
-                <a href="#" class="actual__item actual__item--small">
-                  @@include('var/_actual__item.html', {
-                    "img": "img/act-m-2.jpg"
-                  })                  
-                </a>
-                <a href="#" class="actual__item actual__item--small">
-                  @@include('var/_actual__item.html', {
-                    "img": "img/act-m-3.jpg"
-                  })                  
-                </a>
-              </div>
-            </div>
-            <div class="actual__btn-w">
-              <a href="#" class="btn-o actual__btn">Перейти в каталог</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="pluses section">
-        <div class="contain">
-
-          <div class="pluses__heading heading-2">Плюсы покупки у нас</div>
-
-          <div class="pluses__item--big">
-            <a href="#" class="pluses__img-w-1">
-              <img src="img/pl-img-1.jpg" class="pluses__img" />
-              <div class="pluses__icon-w"><img src="img/pl-1.svg" class="pluses__icon" /></div>
-            </a>
-            <div class="pl-it-1-r">
-              <div class="pl-it-1-r__inn">
-                <div class="pluses__title--big">Экслюзив от ведущих застройщиков Дубая и Кипра.</div>
-                <div class="pluses__text">Наша лицензированная кипрская компания по подбору недвижимости вернет Вам 1% кешбек с каждого платежа сделанного на счет дубайского застройщика и 2% с каждого сделанного на счет кипрского.</div>
-                <div class="pluses__brands">
-                  <a href="#" class="pluses__brand"><img src="img/dev-1.png" /></a>
-                  <a href="#" class="pluses__brand"><img src="img/dev-2.png" /></a>
-                  <a href="#" class="pluses__brand"><img src="img/dev-3.png" /></a>
-                  <a href="#" class="pluses__brand"><img src="img/dev-4.png" /></a>
-                  <a href="#" class="pluses__brand"><img src="img/dev-5.png" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pluses__row pluses__row-1">
-            <div class="pluses__col">
-              <div class="pluses__item">
-                <a href="#" class="pluses__img-w">
-                  <img src="img/pl-img-2.jpg" class="pluses__img" />
-                  <div class="pluses__icon-w"><img src="img/pl-2.svg" class="pluses__icon" /></div>
-                </a>
-                <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
-              </div>
-            </div>
-            <div class="pluses__col">
-              <div class="pluses__item">
-                <a href="#" class="pluses__img-w">
-                  <img src="img/pl-img-3.jpg" class="pluses__img" />
-                  <div class="pluses__icon-w"><img src="img/pl-3.svg" class="pluses__icon" /></div>
-                </a>
-                <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
-              </div>
-            </div>
-          </div><!--pluses__row-1-->
-
-          <div class="pluses__row pluses__row-2">
-            <div class="pluses__col-33">
-              <div class="pluses__item">
-                <a href="#" class="pluses__img-w">
-                  <img src="img/pl-img-4.jpg" class="pluses__img" />
-                  <div class="pluses__icon-w"><img src="img/pl-4.svg" class="pluses__icon" /></div>
-                </a>
-                <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
-              </div>
-            </div>
-            <div class="pluses__col-33">
-              <div class="pluses__item">
-                <a href="#" class="pluses__img-w">
-                  <img src="img/pl-img-5.jpg" class="pluses__img" />
-                  <div class="pluses__icon-w"><img src="img/pl-5.svg" class="pluses__icon" /></div>
-                </a>
-                <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
-              </div>
-            </div>
-            <div class="pluses__col-33">
-              <div class="pluses__item">
-                <a href="#" class="pluses__img-w">
-                  <img src="img/pl-img-6.jpg" class="pluses__img" />
-                  <div class="pluses__icon-w"><img src="img/pl-6.svg" class="pluses__icon" /></div>
-                </a>
-                <a href="#" class="pluses__title">Поможем купить недвижимость заграницей за рубли или криптовалюту</a>
-              </div>
-            </div>
-          </div><!--pluses__row-1-->
-
-
-          <form class="plusform__form">
-
-            <div class="plusform__tabs-control">
-              <label>                
-                <input type="radio" name="subject" checked>
-                <span>Продам</span>
-              </label>
-              <label>                
-                <input type="radio" name="subject" >
-                <span>Сдам в аренду</span>
-              </label>
-              <label>                
-                <input type="radio" name="subject" >
-                <span>Куплю</span>
-              </label>
-              <label>                
-                <input type="radio" name="subject" >
-                <span>Возьму в аренду</span>
-              </label>
-              
-            </div>
-
-            <div class="plusform__row">
-              <div class="plusform__row-inn">
-
-                <div class="plusform__col-1">                
-                  <input class="input-text" type="text" placeholder="Ваше Имя" name="name" required />
-                  <input class="input-text" type="text" placeholder="Телефон" name="phone" required />
-                  <select name="city" class="form__select">
-                    <option value="Город">Город</option>
-                    <option value="Москва">Москва</option>
-                    <option value="Омск">Омск</option>
-                  </select>
-                  <div class="form__select-arrow"></div>                
-                </div>
-
-                <div class="plusform__col-2">
-                  <textarea class="form__area" placeholder="Коротко опишите"></textarea>
-                </div>
-
-                <div class="plusform__col-3">
-                  <div class="form__messengers">
-                    <label class="form__messenger">                    
-                      <input type="radio" name="mess" checked>
-                      <div class="messenger__img-w green">
-                        <img src="img/mess1.svg" />                      
-                      </div>
-                      <div class="messenger__text">Звонок</div>
-                    </label>
-                    <label class="form__messenger">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w green">
-                        <img class="messenger__wa" src="img/mess2.svg" />
-                      </div>
-                      <div class="messenger__text">WhatsApp</div>
-                    </label>
-                    <label class="form__messenger ">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w blue">
-                        <img class="messenger__tg" src="img/mess3.svg" />
-                      </div>
-                      <div class="messenger__text">Telegram</div>
-                    </label>
-                    <label class="form__messenger ">
-                      <input type="radio" name="mess">
-                      <div class="messenger__img-w violet">
-                        <img src="img/mess4.svg" />
-                      </div>
-                      <div class="messenger__text">Viber</div>
-                    </label>
-                  </div>
-                  <label class="label">
-                    <input type="checkbox" name="conf" checked>                  
-                    <span></span>
-                    <div>Согласие на обработку персональных данных</div>
-                  </label>
-                  <button class="btn form__btn">Отправить</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="team section">
-        <div class="contain">
-          <div class="heading-2">Наша международная команда</div>
-          <div class="team__ceo">
-            <div class="team__img-w"><img src="img/team-1.png" /></div>
-            <div class="team__r">
-              <div class="team__ceo-name">Валентин Гроголь</div>
-              <div class="team__ceo-text">Мы обладаем глубокой экспертизой рынка элитной недвижимости и предоставляем полный спектр услуг агентства недвижимости в городах присутствия, включая юридические сопровождение</div>
-              <div class="team__ceo-info">
-                <div class="team__ceo-param">
-                  <div class="team__ceo-num">10 000 +</div>
-                  <div class="team__ceo-cap">уникальных платёжеспособных клиентов</div>
-                </div>
-                <div class="team__ceo-param">
-                  <div class="team__ceo-num">10</div>
-                  <div class="team__ceo-cap">городов специализации</div>
-                </div>
-              </div>
-              <div class="team__btn-w">
-                <a href="#" class="team__btn btn">Получить консультацию</a>
-              </div>
-            </div>
-          </div>
-          <div class="team__row">
-            <a href="#" class="team__it">
-              <div class="team__it-img-w"><img src="img/team-2.png" /></div>
-              <span class="team__it-name">Яэль</span><span class="team__it-pos">Женева</span>
-            </a>
-            <a href="#" class="team__it">
-              <div class="team__it-img-w"><img src="img/team-3.png" /></div>
-              <span class="team__it-name">Татьяна</span><span class="team__it-pos">Кипр</span>
-            </a>
-            <a href="#" class="team__it">
-              <div class="team__it-img-w"><img src="img/team-4.png" /></div>
-              <span class="team__it-name">Елена Кериа</span><span class="team__it-pos">Дубай</span>
-            </a>
-            <a href="#" class="team__it">
-              <div class="team__it-img-w"><img src="img/team-5.png" /></div>
-              <span class="team__it-name">Michael Cullen</span><span class="team__it-pos">Международный менеджер</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="reviews section">
-        <div class="contain">
-          <h2 class="heading-2">Нас рекомендуют</h2>
-          <div class="reviews__slider">
-            <div class="reviews__slide">
-              <div class="reviews__top">
-                <div class="reviews__img-w"><img src="img/reviews1.jpg" class="reviews__img" /></div>
-                <div class="reviews__header">
-                  <div class="reviews__name">Михаил Бабин</div>
-                  <div class="reviews__pos">Директор ReLu Capital</div>
-                  <div class="stars">
-                    <div class="star-o"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+                  <div class="team__btn-w">
+                    <a href="#" class="team__btn btn">Получить консультацию</a>
                   </div>
                 </div>
               </div>
-              <div class="reviews__text">
-                Благодарю компанию English Nanny Property за подбор и организацию покупки квартиры в Дубае в проекте Safa One. Квартира покупалась с инвестиционной целью в рассрочку и уже через неделю после покупки цена на нее
-                выросла на 9,5%. Также для семьи мы купили таунхаус из 4 спален в проекте Damac Lagoons. Я планирую использовать ее для проживания 2 месяца в году, а потом сдавать в аренду. В Лимассоле я купил трёхкомнатную
-                квартиру, для проживания и сдачи в аренду. Приятно порадовало, что компания встретила и показала все объекты, напрямую вывела на продавца и организовала юридическое сопровождение. Для меня было важно обсудить
-                варианты оплаты, что было сделано с учетом моих потребностей. Буду и в дальнейшем использовать услуги компании, чтобы инвестировать в надежные активы с возможностью перепродажи на этапе строительства до оплаты полной
-                суммы. Компания предоставляет систему рассрочки платежа, это очень удобно и выгодно. За неделю я заработал на двухкомнатной квартире в Safa One 70 тыс. долларов.
+              <div class="team__row">
+                <a href="#" class="team__it">
+                  <div class="team__it-img-w"><img src="img/team-2.png" /></div>
+                  <span class="team__it-name">Яэль</span><span class="team__it-pos">Женева</span>
+                </a>
+                <a href="#" class="team__it">
+                  <div class="team__it-img-w"><img src="img/team-3.png" /></div>
+                  <span class="team__it-name">Татьяна</span><span class="team__it-pos">Кипр</span>
+                </a>
+                <a href="#" class="team__it">
+                  <div class="team__it-img-w"><img src="img/team-4.png" /></div>
+                  <span class="team__it-name">Елена Кериа</span><span class="team__it-pos">Дубай</span>
+                </a>
+                <a href="#" class="team__it">
+                  <div class="team__it-img-w"><img src="img/team-5.png" /></div>
+                  <span class="team__it-name">Michael Cullen</span><span class="team__it-pos">Международный менеджер</span>
+                </a>
               </div>
             </div>
-            <div class="reviews__slide">
-              <div class="reviews__top">
-                <div class="reviews__img-w"><img src="img/reviews1.jpg" class="reviews__img" /></div>
-                <div class="reviews__header">
-                  <div class="reviews__name">Михаил Бабин</div>
-                  <div class="reviews__pos">Директор ReLu Capital</div>
-                  <div class="stars">
-                    <div class="star-o"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
+          </section>
+
+
+
+          <section class="reviews section">
+            <div class="contain">
+              <h2 class="heading-2">Нас рекомендуют</h2>
+              <div class="reviews__slider">
+                <div class="reviews__slide">
+                  <div class="reviews__top">
+                    <div class="reviews__img-w"><img src="img/reviews1.jpg" class="reviews__img" /></div>
+                    <div class="reviews__header">
+                      <div class="reviews__name">Михаил Бабин</div>
+                      <div class="reviews__pos">Директор ReLu Capital</div>
+                      <div class="stars">
+                        <div class="star-o"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__text">
+                    Благодарю компанию English Nanny Property за подбор и организацию покупки квартиры в Дубае в проекте Safa One. Квартира покупалась с инвестиционной целью в рассрочку и уже через неделю после покупки цена на нее
+                    выросла на 9,5%. Также для семьи мы купили таунхаус из 4 спален в проекте Damac Lagoons. Я планирую использовать ее для проживания 2 месяца в году, а потом сдавать в аренду. В Лимассоле я купил трёхкомнатную
+                    квартиру, для проживания и сдачи в аренду. Приятно порадовало, что компания встретила и показала все объекты, напрямую вывела на продавца и организовала юридическое сопровождение. Для меня было важно обсудить
+                    варианты оплаты, что было сделано с учетом моих потребностей. Буду и в дальнейшем использовать услуги компании, чтобы инвестировать в надежные активы с возможностью перепродажи на этапе строительства до оплаты полной
+                    суммы. Компания предоставляет систему рассрочки платежа, это очень удобно и выгодно. За неделю я заработал на двухкомнатной квартире в Safa One 70 тыс. долларов.
+                  </div>
+                </div>
+                <div class="reviews__slide">
+                  <div class="reviews__top">
+                    <div class="reviews__img-w"><img src="img/reviews1.jpg" class="reviews__img" /></div>
+                    <div class="reviews__header">
+                      <div class="reviews__name">Михаил Бабин</div>
+                      <div class="reviews__pos">Директор ReLu Capital</div>
+                      <div class="stars">
+                        <div class="star-o"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__text">
+                    Благодарю компанию English Nanny Property за подбор и организацию покупки квартиры в Дубае в проекте Safa One. Квартира покупалась с инвестиционной целью в рассрочку и уже через неделю после покупки цена на нее
+                    выросла на 9,5%. Также для семьи мы купили таунхаус из 4 спален в проекте Damac Lagoons. Я планирую использовать ее для проживания 2 месяца в году, а потом сдавать в аренду. В Лимассоле я купил трёхкомнатную
+                    квартиру, для проживания и сдачи в аренду. Приятно порадовало, что компания встретила и показала все объекты, напрямую вывела на продавца и организовала юридическое сопровождение. Для меня было важно обсудить
+                    варианты оплаты, что было сделано с учетом моих потребностей. Буду и в дальнейшем использовать услуги компании, чтобы инвестировать в надежные активы с возможностью перепродажи на этапе строительства до оплаты полной
+                    суммы. Компания предоставляет систему рассрочки платежа, это очень удобно и выгодно. За неделю я заработал на двухкомнатной квартире в Safa One 70 тыс. долларов.
                   </div>
                 </div>
               </div>
-              <div class="reviews__text">
-                Благодарю компанию English Nanny Property за подбор и организацию покупки квартиры в Дубае в проекте Safa One. Квартира покупалась с инвестиционной целью в рассрочку и уже через неделю после покупки цена на нее
-                выросла на 9,5%. Также для семьи мы купили таунхаус из 4 спален в проекте Damac Lagoons. Я планирую использовать ее для проживания 2 месяца в году, а потом сдавать в аренду. В Лимассоле я купил трёхкомнатную
-                квартиру, для проживания и сдачи в аренду. Приятно порадовало, что компания встретила и показала все объекты, напрямую вывела на продавца и организовала юридическое сопровождение. Для меня было важно обсудить
-                варианты оплаты, что было сделано с учетом моих потребностей. Буду и в дальнейшем использовать услуги компании, чтобы инвестировать в надежные активы с возможностью перепродажи на этапе строительства до оплаты полной
-                суммы. Компания предоставляет систему рассрочки платежа, это очень удобно и выгодно. За неделю я заработал на двухкомнатной квартире в Safa One 70 тыс. долларов.
-              </div>
-            </div>
-          </div>
 
-        </div>
-      </section>  
-
-      <div class="crds section">
-        <div class="contain">
-          <div class="crds__w">
-            <div class="crd">
-              <div class="crd__inn">
-                <div class="crds__icon"><img src="img/crd-1.svg" /></div>
-                <div class="crds__title">У Вас есть недвижимость, которую нужно выгодно продать или сдать в аренду?</div>
-                <div class="crds__text">English Nanny Property представит Ваш объект в лучшем свете и найдёт покупателя / арендатора , который заплатит справедливую цену.</div>
-                <a href="#" class="crds__btn">Получить консультацию специалиста</a>
-              </div>
             </div>
-            <div class="crd">
-              <div class="crd__inn">
-                <div class="crds__icon"><img src="img/crd-2.svg" /></div>
-                <div class="crds__icon"><img src="img/crd-2.svg" /></div>
-                <div class="crds__title">Хотите купить недвижимость для проживания и для выгодного вложения капитала?</div>
-                <div class="crds__text">
-                  Специалисты компании English Nanny Property досконально знают рынок и общаются напрямую с собственниками. У нас много эксклюзивных объектов, которых нет на рынке и которые продаются исключительно через нас
+          </section>  
+
+          <section class="crds section">
+            <div class="contain">
+              <div class="crds__w">
+                <div class="crd">
+                  <div class="crd__inn">
+                    <div class="crds__icon"><img src="img/crd-1.svg" /></div>
+                    <div class="crds__title">У Вас есть недвижимость, которую нужно выгодно продать или сдать в аренду?</div>
+                    <div class="crds__text">English Nanny Property представит Ваш объект в лучшем свете и найдёт покупателя / арендатора , который заплатит справедливую цену.</div>
+                    <a href="#" class="crds__btn">Получить консультацию <span>специалиста</span></a>
+                  </div>
                 </div>
-                <a href="#" class="crds__btn">Получить консультацию специалиста</a>
+                <div class="crd">
+                  <div class="crd__inn">
+                    <div class="crds__icon"><img src="img/crd-2.svg" /></div>
+                    <div class="crds__title">Хотите купить недвижимость для проживания и для выгодного вложения капитала?</div>
+                    <div class="crds__text">
+                      Специалисты компании English Nanny Property досконально знают рынок и общаются напрямую с собственниками. У нас много эксклюзивных объектов, которых нет на рынке и которые продаются исключительно через нас
+                    </div>
+                    <a href="#" class="crds__btn">Получить консультацию <span>специалиста</span></a>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="crd__inn">
+                    <div class="crds__icon"><img src="img/crd-3.svg" /></div>
+                    <div class="crds__title">Хотите снять в аренду напрямую от собственника ?</div>
+                    <div class="crds__text">Мы подберем для Вас лучшие предложения на краткосрочную и долгосрочную аренду. Команда English Nanny Property возьмёт на себя организацию общения с собственником и решение текущих вопросов.</div>
+                    <a href="#" class="crds__btn">Получить консультацию <span>специалиста</span></a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="crd">
-              <div class="crd__inn">
-                <div class="crds__icon"><img src="img/crd-3.svg" /></div>
-                <div class="crds__title">Хотите снять в аренду напрямую от собственника ?</div>
-                <div class="crds__text">Мы подберем для Вас лучшие предложения на краткосрочную и долгосрочную аренду. Команда English Nanny Property возьмёт на себя организацию общения с собственником и решение текущих вопросов.</div>
-                <a href="#" class="crds__btn">Получить консультацию специалиста</a>
+          </section>
+          <section class="cont section">
+            <div class="contain">
+              <div class="cont__row">
+                <div class="cont__l">
+                  <div class="cont__heading heading-2">Контакты</div>
+                  <div class="cont-inf-w">
+                    <div class="cont__item">
+                      <a class="cont__tag">Основной офис</a>
+                      <div class="cont__adress">London, 1 Warwick Row, SW1E 5ER</div>
+                      <a href="tel:44 (203) 514-96-99" class="cont__phone">+44 (203) 514-96-99</a>
+                    </div>
+                    <div class="cont__item">
+                      <a class="cont__tag">Кипр</a>
+                      <div class="cont__adress">Никосия Кипр, strovolos center, 2nd floor</div>
+                      <a href="tel:+7 (495) 543-76-55" class="cont__phone">+7 (495) 543-76-55</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont__r">
+                  <span class="point point-1"></span>
+                  <span class="point point-2"></span>
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac254c69fb33fe6d7f37a4d81ca3d7e2519e22507486fd1f82199aab831fa2274&amp;width=100%25&amp;height=336&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
               </div>
+            </div>
+          </section>
+
+        </main>
+
+
+
+        <footer class="footer">
+          <div class="contain">
+            <div class="footer__row">
+              <a class="footer__logo"><img src="img/logo-ft.svg" /></a>
+              <div class="footer__copy">© 2022 Все права защищены</div>
             </div>
           </div>
-        </div>
+        </footer>
+
+
+
+
       </div>
+      <!--wrapper-->
 
-
-      <section class="cont section">
-        <div class="contain">
-          <div class="cont__row">
-            <div class="cont__l">
-              <div class="cont__heading heading-2">Контакты</div>
-              <div class="cont-inf-w">
-                <div class="cont__item">
-                  <a class="cont__tag">Основной офис</a>
-                  <div class="cont__adress">London, 1 Warwick Row, SW1E 5ER</div>
-                  <a class="cont__phone">+44 (203) 514-96-99</a>
-                </div>
-                <div class="cont__item">
-                  <a class="cont__tag">Кипр</a>
-                  <div class="cont__adress">Никосия Кипр, strovolos center, 2nd floor</div>
-                  <a class="cont__phone">+7 (495) 543-76-55</a>
-                </div>
-              </div>
-            </div>
-            <div class="cont__r"><img src="img/map.jpg" class="cont-img" /></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-
-
-    <footer class="footer">
-      <div class="contain">
-        <div class="footer__row">
-          <a class="footer__logo"><img src="img/logo-ft.svg" /></a>
-          <div class="footer__copy">© 2022 Все права защищены</div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-  </div>
-  <!--wrapper-->
-
-  <script src="js/jquery-3.4.1.min.js"></script>      
-  <script src="js/select2.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="js/common.js"></script>
-</body>
-</html>
+      <script src="js/jquery-3.4.1.min.js"></script>      
+      <script src="js/select2.min.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/common.js"></script>
+    </body>
+    </html>
 
