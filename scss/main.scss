@@ -1233,15 +1233,6 @@ img.messenger__tg {
   display: flex;
 }
 
-.star-o {
-  width: 24px;
-  height: 24px;
-  margin-right: 13px;
-  background-image: url("../img/star-o.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 .star {
   width: 24px;
   height: 24px;
@@ -1250,6 +1241,11 @@ img.messenger__tg {
   background-repeat: no-repeat;
   background-position: center top;
 }
+
+.star-o {  
+  background-image: url("../img/star-o.svg");  
+}
+
 
 .reviews__text {
   margin-top: 24px;
@@ -1292,7 +1288,7 @@ img.messenger__tg {
 
 
 .actual {
-  
+  border-top: 1px solid #E8E9ED;
 }
 
 .actual__w {
@@ -1860,6 +1856,11 @@ color: #545863;
   
           align-items: stretch;
 }
+
+.plusform__title {
+  display: none;
+}
+
 .plusform__row {
   background-color: #FFF; 
   display: flex;
@@ -1870,6 +1871,10 @@ color: #545863;
   display: flex;    
       
   padding: 0 32px;
+}
+
+.plusform__select-subject-w {
+  display: none;
 }
 
 .plusform__tabs-control {
@@ -1948,7 +1953,7 @@ color: #545863;
 }
 
 .team__img-w {
-  border-radius: 12px;
+  border-radius: 12px;  
   width: 352px;
   height: 352px;
   display: flex;
@@ -1956,6 +1961,12 @@ color: #545863;
   justify-content: center;
   flex: 0 0 auto;
   overflow: hidden;
+  picture,
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .team__r {

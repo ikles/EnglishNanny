@@ -46,8 +46,26 @@ else {
   body.classList.add('mouse')
 }
 
+function scrollBarTeam() {
+  $(".team__row-w").mCustomScrollbar({
+    axis: "x",
+    theme: "dark-3",
+    mouseWheel: 0,
+    scrollInertia: '230'
+  });    
+}
 
 
+if( $(window).width() < 800 ) {
+  scrollBarTeam()
+}
+
+
+$(window).resize(function() {
+  if( $(window).width() < 800 ) {
+    scrollBarTeam()
+  }
+});
 
 
 
