@@ -81,20 +81,17 @@ $('.reviews__slider').slick({
   pauseOnHover: true,  
 });
 
-/*
-$('.slider-2').slick({
+
+$('.search-objects__slider').slick({
   infinite: true,    
-  speed: 6900,
+  speed: 600,
   slidesToScroll: 1,
-  autoplay: true,    
-  slidesToShow: 4,
-  cssEase: 'linear',
-  autoplay: true,
-  autoplaySpeed: 0,
-  rtl: true ,
-  arrows: false,
-  pauseOnHover: true,
-})*/
+  autoplay: false,    
+  slidesToShow: 1,  
+  autoplaySpeed: 0,  
+  arrows: true,  
+  dots: true,  
+})
 
 
 /************************************/
@@ -176,11 +173,36 @@ $(window).scroll(function(){
  }
 });
 
-if($('select').length) {
-  $('select').select2({
+/**************/
+
+if($('.form__select, .plusform__select-subject').length) {
+  $('.form__select, .plusform__select-subject').select2({
     minimumResultsForSearch: -1
   });
 }
+
+
+var mySelect = $('.search-objects__select');
+mySelect.fancySelect();
+
+
+/*$('.search-actions__checkbox').click(function () {
+  $('.search-actions__radio')
+});*/
+
+
+$('.search-actions__checkbox').change(function() {
+  if(this.checked) {
+    $('.search-actions__radio').prop("checked", false)    
+  }  
+});
+
+$('.search-actions__radio').change(function() {
+  if(this.checked) {
+    $('.search-actions__checkbox').prop("checked", false)    
+  }  
+});
+
 
 }); //ready
 

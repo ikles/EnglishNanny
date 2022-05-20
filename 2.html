@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>  
+  @@include('var/_stl.html')
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body class="body--catalog">
+
+  <div class="wrapper">
+    <header class="header header--border">
+      @@include('var/_header.html')
+    </header>
+    <main class="main">
+
+
+
+      <div class="search-objects">
+        <div class="contain">
+          <div class="heading-2 search-objects__heading">Поиск объектов</div>
+          <form class="search-objects__form">
+            <div class="search-objects__row">
+
+              <div class="search-objects__col">
+                <select class="search-objects__select" name="type">
+                  <option value="Городская">Городская</option>      
+                  <option value="Загородная">Загородная</option>      
+                </select>
+              </div>
+              <div class="search-objects__col">
+               <select class="search-objects__select" name="app">
+                <option value="Квартиры">Квартиры</option>      
+                <option value="Дома">Дома</option>      
+              </select>
+            </div>
+            <div class="search-objects__col">
+              <select class="search-objects__select" name="loc">
+                <option value="Дубай">Дубай</option>      
+                <option value="Тайланд">Тайланд</option>      
+              </select>
+            </div>
+            <div class="search-objects__col">
+              <select class="search-objects__select" name="bed">
+                <option value="Кол-во спален">Кол-во спален</option>      
+                <option value="1">1</option>      
+                <option value="2">2</option>      
+              </select>
+            </div>
+            <div class="search-objects__col">
+             <select class="search-objects__select" name="bath">
+              <option value="Кол-во ванн">Кол-во ванн</option>      
+              <option value="1">1</option>      
+              <option value="2">2</option>      
+            </select> 
+          </div>
+          <div class="search-objects__col">
+            <div class="input-text-wrap">
+              <input type="text" name="sq_1" class="input-text input-text--nobord" placeholder="Площадь от">      
+              —
+              <input type="text" name="sq_2" class="input-text input-text--nobord" placeholder="До">
+            </div>
+          </div>
+          <div class="search-objects__col">
+            <div class="input-text-wrap">
+              <input type="text" name="price_1" class="input-text input-text--nobord" placeholder="Цена от">      
+              —
+              <input type="text" name="price_2" class="input-text input-text--nobord" placeholder="До">
+              <select class="search-objects__select search-objects__select-2" name="bath">
+                <option value="rub">₽</option>      
+                <option value="usd">$</option>      
+                <option value="eur">€</option>      
+              </select> 
+            </div>
+          </div>
+
+        </div><!--search-objects__row-->
+
+        <div class="search-objects__actions">
+          <label class="search-objects__label label">
+            <input type="checkbox" name="excl">
+            <span></span>
+            <div>Эксклюзивный объект</div>
+          </label>
+          
+          <div class="search-objects__radios">
+            <label class="search-objects__radio-label radio__label">
+              <input type="radio" name="new" checked>
+              <span></span>
+              <div>Новостройка</div>
+            </label>
+            <label class="search-objects__radio-label radio__label">
+              <input type="radio" name="new">
+              <span></span>
+              <div>Вторичка</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="search-objects__btn-w">
+          <button class="search-objects__btn btn _red">Показать <span>(239)</span></button>
+        </div>
+
+
+        
+      </form>
+
+      <div class="search-actions">
+        <div class="search-actions__lbls">
+          <label class="search-actions__lbl">
+            <input type="checkbox" class="search-actions__checkbox">
+            <div>по цене</div>
+            <span></span>
+          </label>
+          <label class="search-actions__lbl">
+            <input type="radio" class="search-actions__radio">
+            <div>по площади</div>
+          </label>
+        </div>
+
+        <div class="search-curr">
+          <label class="search-curr__lbl">    
+            <input type="radio" name="curr" checked>
+            <span>₽</span>
+          </label>
+          <label class="search-curr__lbl">    
+            <input type="radio" name="curr">
+            <span>$</span>
+          </label>
+          <label class="search-curr__lbl">    
+            <input type="radio" name="curr">
+            <span>€</span>
+          </label>
+        </div><!--search-actions__curr-->
+
+      </div><!--search-actions-->
+
+      <div class="search-objects__row">
+        <div class="search-objects__item">
+          <div class="search-objects__left">
+            <div class="search-objects__cap">Эксклюзив</div>
+            
+            <div class="search-objects__slider">
+              <div class="search-objects__slide">
+                <img src="img/search-objects-1.jpg" class="search-objects__slide-img" />
+              </div>
+              <div class="search-objects__slide">
+                <img src="img/search-objects-2.jpg" class="search-objects__slide-img" />
+              </div>
+              <div class="search-objects__slide">
+                <img src="img/search-objects-3.jpg" class="search-objects__slide-img" />
+              </div>
+              <div class="search-objects__slide">
+                <img src="img/search-objects-4.jpg" class="search-objects__slide-img" />
+              </div>
+            </div>
+
+            <div class="slider__info">
+              <img src="img/slider-info.svg" class="slider__info-img" />
+              <div class="slider__info-count">+12</div>
+            </div>
+          </div>
+          <div class="search-objects__right">
+            <div class="search-objects__right-inner">
+              <div class="search-objects__info">
+                <div class="search-objects__info-item">ID: 12345</div>
+                <div class="search-objects__info-item">3 квартал 2023 г.</div>
+                <div class="search-objects__info-item">ЖК “Большие города”</div>
+              </div>
+              <a href="#" class="search-objects__title">Видовая 3-комн. квартира 150м2 в ЖК “Большие города” с длинным названием в 2 строчки</a>
+              <div class="search-objects__loc">
+                <div class="search-objects__loc-img"><img src="img/sloc.svg" /></div>
+                <div class="search-objects__loc-text">Дубай, Бизнес Бэй, 45</div>
+              </div>
+              <div class="soptions">
+                <div class="soptions__item">
+                  <div class="soptions__img-w"><img src="img/option-1.svg" /></div>
+                  <div class="soptions__text">150 м2</div>
+                </div>
+                <div class="soptions__item">
+                  <div class="soptions__img-w"><img src="img/option-2.svg" /></div>
+                  <div class="soptions__text">3</div>
+                </div>
+                <div class="soptions__item">
+                  <div class="soptions__img-w"><img src="img/option-3.svg" /></div>
+                  <div class="soptions__text">2</div>
+                </div>
+              </div>
+              <div class="object-tags">
+                <a href="#" class="object-tags__item">Отделка и мебель </a>
+                <a href="#" class="object-tags__item">Бассейн</a>
+                <a href="#" class="object-tags__item">Терасса</a>
+                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
+                <a href="#" class="object-tags__item">Терасса</a>
+                <a href="#" class="object-tags__item">Еще плюшка</a>
+                <a href="#" class="object-tags__item"> Еще длинная опция</a>
+                <a href="#" class="object-tags__item">Терасса</a>
+                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
+                <a href="#" class="object-tags__item">Отделка и мебель </a>
+                <a href="#" class="object-tags__item">Бассейн</a>
+                <a href="#" class="object-tags__item">Терасса</a>
+                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
+              </div>
+              <div class="search-objects__buttons">
+                <a href="#" class="btn _red search-objects__btn-2">Заказать звонок</a>
+                <a href="#" class="btn-o search-objects__btn-2">Онлайн-показ</a>
+                <a href="#" class="btn-o search-objects__btn-2">+7 (495) 123-45-67</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--search-objects-->
+
+    </div><!--contain-->
+  </div>
+
+</main>
+
+@@include('var/_footer.html')

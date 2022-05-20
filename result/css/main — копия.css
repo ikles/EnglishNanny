@@ -1387,9 +1387,6 @@ img.banner__iphone-2 {
   display: flex;
   padding-right: 24px; }
 
-.header--border {
-  border-bottom: 1px solid #E8E9ED; }
-
 .input-text {
   width: 100%;
   border: 1px solid #d0d3dc;
@@ -1410,29 +1407,6 @@ img.banner__iphone-2 {
     color: #A1A9B6; }
   .input-text::placeholder {
     color: #A1A9B6; }
-
-.input-text-wrap {
-  border: 1px solid #d0d3dc;
-  border-radius: 6px;
-  height: 44px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 255px;
-  -webkit-flex: none;
-      -ms-flex: none;
-          flex: none; }
-
-.input-text--nobord {
-  border: none;
-  box-shadow: none;
-  height: 100%;
-  margin-bottom: 0;
-  width: 50%;
-  padding-right: 8px; }
 
 .form__select555555555555 {
   width: 100%;

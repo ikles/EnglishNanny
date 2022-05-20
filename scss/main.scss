@@ -441,14 +441,19 @@ body {
   justify-content: center;
   color: rgb(230, 240, 247);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 600;  
+          transition: 0.5s;
   &._red {
     background: linear-gradient(90deg, #E3004C 0%, #EA1159 100%);
     box-shadow: 0px 6px 10px -2px rgba(85, 105, 135, 0.04), 0px 2px 4px -2px rgba(85, 105, 135, 0.06);
     color: #FBE6ED;
+    &:hover {
+      
+    }
   }
   &:hover {
     text-decoration: none;
+    opacity: 0.8;
   }  
 }
 
@@ -712,17 +717,36 @@ img.banner__iphone-2 {
   overflow: hidden;
   position: relative;
   display: flex;  
-  justify-content: flex-start;  
+  justify-content: flex-start;   
+           transition: 0.5s; 
+           cursor: pointer;
   &:before {
     content: "";
     display: block;
-    position: absolute;
     background: linear-gradient(90deg, #1C1D21 0%, rgba(28, 29, 33, 0) 100%);
+    position: absolute;
     left: 0;
     top: 0;
     width: 70%;
     height: 100%;
-  }  
+  } 
+  &:after {
+    content: "";
+    display: block;
+    background: linear-gradient(90deg, #E3004C 0%, rgba(227, 0, 76, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    opacity: 0;    
+    transition: 0.5s;
+  } 
+  &:hover {
+    &:after {
+    opacity: 1;  
+    }
+  }
 }
 
 .cities-items__it-img {
@@ -735,6 +759,7 @@ img.banner__iphone-2 {
   position: absolute;
   padding-left: 32px;
   padding-top: 18px;
+  z-index: 20;
 }
 
 .cities-items__tit-big {
@@ -790,6 +815,23 @@ img.banner__iphone-2 {
     height: 100%;
     background: linear-gradient(90deg, #1C1D21 0%, rgba(28, 29, 33, 0) 100%);
   }  
+  &:after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #E3004C 0%, rgba(227, 0, 76, 0) 100%);
+    opacity: 0;    
+            transition: 0.5s;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
 }
 
 .cities-items__tit {
@@ -799,6 +841,7 @@ img.banner__iphone-2 {
   font-weight: 700;
   font-size: 18px;
   color: #FFFFFF;
+  z-index: 20;
 }
 
 .show-objects {
@@ -869,6 +912,10 @@ img.banner__iphone-2 {
   padding-right: 24px;
 }
 
+.header--border {
+  border-bottom: 1px solid #E8E9ED; 
+}
+
 .input-text {
   width: 100%;
   border: 1px solid rgb(208, 211, 220);
@@ -884,6 +931,27 @@ img.banner__iphone-2 {
   &::placeholder {
     color: #A1A9B6;
   }
+}
+
+
+
+.input-text-wrap {
+  border: 1px solid rgb(208, 211, 220);
+  border-radius: 6px;
+  height: 44px;
+  display: flex;  
+  align-items: center;
+  width: 255px;          
+  flex: none;
+}
+
+.input-text--nobord {
+  border: none;  
+  box-shadow: none;
+  height: 100%;
+  margin-bottom: 0;
+  width: 50%;
+  padding-right: 8px;    
 }
 
 .form__select555555555555 {
@@ -2213,7 +2281,11 @@ color: #545863;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 336px;
+  min-height: 336px;  
+          transition: 0.5s;
+  &:hover {    
+             box-shadow: 0px 5px 25px 0px rgba(18,25,38,0.1);             
+  }
 }
 
 .crd__inn {
@@ -2280,6 +2352,14 @@ color: #545863;
     margin-left: 4px;
   }
 }
+
+
+
+
+
+
+
+
 
 @import "_media.scss";
 @import "_after-styless";
