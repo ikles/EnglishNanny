@@ -139,80 +139,51 @@
       </div><!--search-actions-->
 
       <div class="search-objects__row">
-        <div class="search-objects__item">
-          <div class="search-objects__left">
-            <div class="search-objects__cap">Эксклюзив</div>
-            
-            <div class="search-objects__slider">
-              <div class="search-objects__slide">
-                <img src="img/search-objects-1.jpg" class="search-objects__slide-img" />
-              </div>
-              <div class="search-objects__slide">
-                <img src="img/search-objects-2.jpg" class="search-objects__slide-img" />
-              </div>
-              <div class="search-objects__slide">
-                <img src="img/search-objects-3.jpg" class="search-objects__slide-img" />
-              </div>
-              <div class="search-objects__slide">
-                <img src="img/search-objects-4.jpg" class="search-objects__slide-img" />
-              </div>
-            </div>
-
-            <div class="slider__info">
-              <img src="img/slider-info.svg" class="slider__info-img" />
-              <div class="slider__info-count">+12</div>
-            </div>
-          </div>
-          <div class="search-objects__right">
-            <div class="search-objects__right-inner">
-              <div class="search-objects__info">
-                <div class="search-objects__info-item">ID: 12345</div>
-                <div class="search-objects__info-item">3 квартал 2023 г.</div>
-                <div class="search-objects__info-item">ЖК “Большие города”</div>
-              </div>
-              <a href="#" class="search-objects__title">Видовая 3-комн. квартира 150м2 в ЖК “Большие города” с длинным названием в 2 строчки</a>
-              <div class="search-objects__loc">
-                <div class="search-objects__loc-img"><img src="img/sloc.svg" /></div>
-                <div class="search-objects__loc-text">Дубай, Бизнес Бэй, 45</div>
-              </div>
-              <div class="soptions">
-                <div class="soptions__item">
-                  <div class="soptions__img-w"><img src="img/option-1.svg" /></div>
-                  <div class="soptions__text">150 м2</div>
-                </div>
-                <div class="soptions__item">
-                  <div class="soptions__img-w"><img src="img/option-2.svg" /></div>
-                  <div class="soptions__text">3</div>
-                </div>
-                <div class="soptions__item">
-                  <div class="soptions__img-w"><img src="img/option-3.svg" /></div>
-                  <div class="soptions__text">2</div>
-                </div>
-              </div>
-              <div class="object-tags">
-                <a href="#" class="object-tags__item">Отделка и мебель </a>
-                <a href="#" class="object-tags__item">Бассейн</a>
-                <a href="#" class="object-tags__item">Терасса</a>
-                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
-                <a href="#" class="object-tags__item">Терасса</a>
-                <a href="#" class="object-tags__item">Еще плюшка</a>
-                <a href="#" class="object-tags__item"> Еще длинная опция</a>
-                <a href="#" class="object-tags__item">Терасса</a>
-                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
-                <a href="#" class="object-tags__item">Отделка и мебель </a>
-                <a href="#" class="object-tags__item">Бассейн</a>
-                <a href="#" class="object-tags__item">Терасса</a>
-                <a href="#" class="object-tags__item"> Кешбэк 1%</a>
-              </div>
-              <div class="search-objects__buttons">
-                <a href="#" class="btn _red search-objects__btn-2">Заказать звонок</a>
-                <a href="#" class="btn-o search-objects__btn-2">Онлайн-показ</a>
-                <a href="#" class="btn-o search-objects__btn-2">+7 (495) 123-45-67</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        @@include('var/_search-objects__item.html',{
+          "ex":"Эксклюзив",
+          "price":"<div class='object-price__old'>59 500 000 ₽</div><div class='object-price__price'>58 500 000 ₽</div>",
+          "title":"Видовая 3-комн. квартира 150м2 в ЖК “Большие города” с длинным названием в 2 строчки",
+          "slider":"<div class='search-objects__slide'><img src='img/search-objects-1.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-2.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-3.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-4.jpg' class='search-objects__slide-img' /></div>",
+          "tags":"<a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'>Еще плюшка</a><a href='#' class='object-tags__item'> Еще длинная опция</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a>"
+        })
+        @@include('var/_search-objects__item.html',{
+          "ex":"",
+          "price":"<div class='object-price__price-2'>58 500 000 ₽<span class='object-price__arrow'></span></div>",
+          "title":"Видовая 3-комн. квартира 150м2 в ЖК ",
+          "slider":"<div class='search-objects__slide'><img src='img/search-objects-2.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-1.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-3.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-4.jpg' class='search-objects__slide-img' /></div>",
+          "tags":"<a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'>Еще плюшка</a><a href='#' class='object-tags__item'> Еще длинная опция</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a>"
+        })
+        @@include('var/_search-objects__item.html',{
+          "ex":"",
+          "price":"<div class='object-price__price-2'>58 500 000 ₽<span class='object-price__arrow'></span></div>",
+          "title":"Видовая 3-комн. квартира 150м2 в ЖК ",
+          "slider":"<div class='search-objects__slide'><img src='img/search-objects-3.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-1.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-2.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-4.jpg' class='search-objects__slide-img' /></div>",
+          "tags":"<a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Терасса</a>"
+        })
+        @@include('var/_search-objects__item.html',{
+          "ex":"Эксклюзив",
+          "price":"<div class='object-price__price-2'>58 500 000 ₽<span class='object-price__arrow'></span></div>",
+          "title":"Видовая 3-комн. квартира 150м2 в ЖК ",
+          "slider":"<div class='search-objects__slide'><img src='img/search-objects-4.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-1.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-3.jpg' class='search-objects__slide-img' /></div><div class='search-objects__slide'><img src='img/search-objects-2.jpg' class='search-objects__slide-img' /></div>",
+          "tags":"<a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'>Еще плюшка</a><a href='#' class='object-tags__item'> Еще длинная опция</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a><a href='#' class='object-tags__item'>Отделка и мебель </a><a href='#' class='object-tags__item'>Бассейн</a><a href='#' class='object-tags__item'>Терасса</a><a href='#' class='object-tags__item'> Кешбэк 1%</a>"
+        })
       </div>
+
+      <div class="spagin">
+        <div class="spagin__more-btn-w">
+          <a href="#" class="btn-o spagin__more-btn">Show more</a>
+        </div>
+        <ul class="spagin__list">
+          <li class="spagin__list-prev"><a class="spagin-control spagin-prev" href="#"></a></li>
+          <li><a class="active" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">134</a></li>
+          <li class="spagin__list-next"><a class="spagin-control spagin-next" href="#"></a></li>    
+        </ul>
+      </div>
+
       <!--search-objects-->
 
     </div><!--contain-->
