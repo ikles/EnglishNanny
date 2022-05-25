@@ -2353,8 +2353,16 @@ color: #545863;
   }
 }
 
+.accordion-header {
+  cursor: pointer;
+}
 
-
+.accordion-content {
+  display: none;
+  &.open-content {
+    display: block;
+  }
+}
 
 
 

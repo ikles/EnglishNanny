@@ -30,19 +30,19 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .search-objects__heading {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 
 .search-objects__row {
   display: flex;  
   flex-wrap: wrap;
 }
-.search-objects__col {
-  -webkit-flex: none;
-  -ms-flex: none;
+
+
+.search-objects__col {  
   flex: none;
   &:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 9px;
   }
 }
 
@@ -67,10 +67,12 @@ div.fancy-select {
     border-radius: 6px;
     display: flex;
     align-items: center;
-    padding: 0 28px 0 14px;
+    padding: 0 44px 0 14px;
+     &:after {
+      right: 17px;
+    }
   }
   select:focus + div.trigger.open {
-
     border: 1px solid #D0D3DC;
     box-shadow: 0px 1px 2px rgba(42, 51, 66, 0.05);
   }
@@ -102,10 +104,11 @@ div.fancy-select ul.options li.hover {
   font-size: 14px;
   color: #000000;
   div.fancy-select div.trigger {
-    border: none;
+    border: none;    
     &.open {
       border: none;
     }
+   
   }
   div.fancy-select select:focus + div.trigger.open {
     border: none;    
@@ -184,6 +187,7 @@ div.fancy-select ul.options li.hover {
 
 .search-objects__btn {
   height: 46px;
+  padding: 0 45px;
   span {
     display: inline-block;
     margin-left: 4px;
@@ -191,7 +195,7 @@ div.fancy-select ul.options li.hover {
 }
 
 .search-objects__btn-w {
-  margin-top: 11px;
+  margin-top: 3px;
   display: flex;  
   justify-content: flex-end;
 }
@@ -199,7 +203,7 @@ div.fancy-select ul.options li.hover {
 .search-actions {
   display: flex;  
   flex-wrap: wrap;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .search-actions__lbls {
@@ -258,8 +262,9 @@ div.fancy-select ul.options li.hover {
   margin-left: auto;
 }
 .search-curr__lbl {  
+  cursor: pointer;
   &:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 7px;
   }
   input[type="radio"] {
     display: none;
@@ -283,14 +288,14 @@ div.fancy-select ul.options li.hover {
         border: none;
       }
     }
-  }
+  }  
 }
 
 
 
 
-.search-objects__row {
-  margin-top: 36px;
+.search-objects__items {
+  margin-top: 31px;
 }
 
 .search-objects__item {
@@ -300,17 +305,20 @@ div.fancy-select ul.options li.hover {
   border-radius: 8px;
   overflow: hidden;  
   &:not(:last-child) {
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 }
 
 
-.search-objects__left {
-  flex: 1 1 auto;
+.search-objects__left {  
   overflow: hidden;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  width: 992px;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
   &:after {
     content: "";
     display: block;
@@ -450,9 +458,8 @@ div.fancy-select ul.options li.hover {
   margin-left: 5px;
 }
 
-.search-objects__right {
-  width: 512px;
-  flex: 0 0 auto;
+.search-objects__right {  
+          flex-grow: 1;
   padding-right: 19px;
   margin-left: 30px;
   padding-top: 24px;
@@ -475,13 +482,15 @@ div.fancy-select ul.options li.hover {
   font-size: 14px;
   line-height: 1.7;
   color: rgb(84, 88, 99);
-  margin-right: 48px;
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
 }
 
 .search-objects__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.55;
   color: rgb(84, 88, 99);
   margin-bottom: 24px;
 }
@@ -489,7 +498,7 @@ div.fancy-select ul.options li.hover {
 .search-objects__loc {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .search-objects__loc-img {
@@ -554,7 +563,7 @@ div.fancy-select ul.options li.hover {
 .search-objects__btn-2 {
   height: 36px;
   font-size: 14px;
-  padding: 0 16.5px;
+  padding: 0 16px;
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -567,6 +576,7 @@ div.fancy-select ul.options li.hover {
 
 .object-price {
   margin-bottom: 24px;
+  margin-top: 34px;
 }
 
 .object-price__old {

@@ -10,7 +10,7 @@
   padding: 32px; }
 
 .search-objects__heading {
-  margin-bottom: 4px; }
+  margin-bottom: 0px; }
 
 .search-objects__row {
   display: -webkit-flex;
@@ -22,10 +22,10 @@
 
 .search-objects__col {
   -webkit-flex: none;
-  -ms-flex: none;
-  flex: none; }
+      -ms-flex: none;
+          flex: none; }
   .search-objects__col:not(:last-child) {
-    margin-right: 8px; }
+    margin-right: 9px; }
 
 div.fancy-select {
   font-weight: 400;
@@ -45,7 +45,9 @@ div.fancy-select {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 28px 0 14px; }
+    padding: 0 44px 0 14px; }
+    div.fancy-select div.trigger:after {
+      right: 17px; }
   div.fancy-select select:focus + div.trigger.open {
     border: 1px solid #D0D3DC;
     box-shadow: 0px 1px 2px rgba(42, 51, 66, 0.05); }
@@ -146,13 +148,14 @@ div.fancy-select ul.options li.hover {
       border-radius: 50%; }
 
 .search-objects__btn {
-  height: 46px; }
+  height: 46px;
+  padding: 0 45px; }
   .search-objects__btn span {
     display: inline-block;
     margin-left: 4px; }
 
 .search-objects__btn-w {
-  margin-top: 11px;
+  margin-top: 3px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +170,7 @@ div.fancy-select ul.options li.hover {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 36px; }
+  margin-top: 32px; }
 
 .search-actions__lbls {
   display: -webkit-flex;
@@ -224,38 +227,39 @@ div.fancy-select ul.options li.hover {
   display: flex;
   margin-left: auto; }
 
-.search-curr__lbl:not(:last-child) {
-  margin-right: 8px; }
+.search-curr__lbl {
+  cursor: pointer; }
+  .search-curr__lbl:not(:last-child) {
+    margin-right: 7px; }
+  .search-curr__lbl input[type="radio"] {
+    display: none; }
+    .search-curr__lbl input[type="radio"] + span {
+      padding: 0 10px;
+      height: 32px;
+      border: 1px solid #D0D3DC;
+      border-radius: 5px;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-flex: none;
+          -ms-flex: none;
+              flex: none;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 24px;
+      color: #A1A9B6;
+      font-weight: 700; }
+    .search-curr__lbl input[type="radio"]:checked + span {
+      background: linear-gradient(90deg, #0068B1 0%, #188FE4 100%);
+      color: #FFFFFF;
+      border: none; }
 
-.search-curr__lbl input[type="radio"] {
-  display: none; }
-  .search-curr__lbl input[type="radio"] + span {
-    padding: 0 10px;
-    height: 32px;
-    border: 1px solid #D0D3DC;
-    border-radius: 5px;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-flex: none;
-        -ms-flex: none;
-            flex: none;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 24px;
-    color: #A1A9B6;
-    font-weight: 700; }
-  .search-curr__lbl input[type="radio"]:checked + span {
-    background: linear-gradient(90deg, #0068B1 0%, #188FE4 100%);
-    color: #FFFFFF;
-    border: none; }
-
-.search-objects__row {
-  margin-top: 36px; }
+.search-objects__items {
+  margin-top: 31px; }
 
 .search-objects__item {
   display: -webkit-flex;
@@ -266,12 +270,9 @@ div.fancy-select ul.options li.hover {
   border-radius: 8px;
   overflow: hidden; }
   .search-objects__item:not(:last-child) {
-    margin-bottom: 48px; }
+    margin-bottom: 46px; }
 
 .search-objects__left {
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   overflow: hidden;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -280,7 +281,11 @@ div.fancy-select ul.options li.hover {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  position: relative; }
+  position: relative;
+  width: 992px;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
   .search-objects__left:after {
     content: "";
     display: block;
@@ -407,10 +412,9 @@ div.fancy-select ul.options li.hover {
   margin-left: 5px; }
 
 .search-objects__right {
-  width: 512px;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-right: 19px;
   margin-left: 30px;
   padding-top: 24px;
@@ -437,13 +441,14 @@ div.fancy-select ul.options li.hover {
 .search-objects__info-item {
   font-size: 14px;
   line-height: 1.7;
-  color: #545863;
-  margin-right: 48px; }
+  color: #545863; }
+  .search-objects__info-item:not(:last-child) {
+    margin-right: 48px; }
 
 .search-objects__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.55;
   color: #545863;
   margin-bottom: 24px; }
 
@@ -454,7 +459,7 @@ div.fancy-select ul.options li.hover {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px; }
+  margin-bottom: 26px; }
 
 .search-objects__loc-img {
   margin-right: 12px;
@@ -526,14 +531,15 @@ div.fancy-select ul.options li.hover {
 .search-objects__btn-2 {
   height: 36px;
   font-size: 14px;
-  padding: 0 16.5px; }
+  padding: 0 16px; }
   .search-objects__btn-2:not(:last-child) {
     margin-right: 8px; }
   .search-objects__btn-2.btn-o {
     height: 34px; }
 
 .object-price {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  margin-top: 34px; }
 
 .object-price__old {
   font-weight: 600;
@@ -671,7 +677,7 @@ ul.spagin__list {
   border: none; }
 
 body.active {
-  background: url("../img/1920.jpg") no-repeat top 0px center; }
+  background: url("../img/1920.jpg") no-repeat top -1399px center; }
   body.active .wrapper {
     opacity: 0.4; }
   body.active .footer {

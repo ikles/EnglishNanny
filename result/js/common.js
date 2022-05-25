@@ -91,26 +91,59 @@ $('.search-objects__slider').slick({
   autoplaySpeed: 0,  
   arrows: true,  
   dots: true,  
-})
+});
 
+$('.accordion-header').click(function () {
+  $(this).toggleClass('active-header')  
+  $(this).next().slideToggle().toggleClass('open-content')  
+});
+
+
+$( '#example4' ).sliderPro({
+  width: 992,
+  height: 576,
+  fade: true,
+  arrows: true,
+  buttons: false,
+  fullScreen: false,
+  shuffle: true,
+  smallSize: 500,
+  mediumSize: 1000,
+  largeSize: 3000,
+  thumbnailArrows: true,
+  autoplay: false
+});
+
+$( '#example5' ).sliderPro({
+  width: 992,
+  height: 576,
+  fade: true,
+  arrows: true,
+  buttons: false,
+  fullScreen: false,
+  shuffle: true,
+  smallSize: 500,
+  mediumSize: 1000,
+  largeSize: 3000,
+  thumbnailArrows: true,
+  autoplay: false
+});
 
 /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
-
-$('body').addClass('active').css('background-image', "url('../img/1.jpg')");
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
 
 $('.eye-3').click(function (e) {
   e.preventDefault();  
   $('body').toggleClass('active');
   let pg = parseInt(document.location.pathname.match(/\d+/));
-  
-  $('body.active').css('background-image', "url('../img/1.jpg')");
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /************************************/
 
@@ -127,6 +160,8 @@ function tabs(element) {
 
 
 tabs('.ser__tabs');
+tabs('.scard-main__tabs');
+
 
 
 function popup(openLink, windowEl, closeEl) {  
