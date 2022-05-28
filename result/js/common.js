@@ -46,8 +46,8 @@ else {
   body.classList.add('mouse')
 }
 
-function scrollBarTeam() {
-  $(".team__row-w").mCustomScrollbar({
+function scrollBarTeam(elem) {
+  $(elem).mCustomScrollbar({
     axis: "x",
     theme: "dark-3",
     mouseWheel: 0,
@@ -57,13 +57,26 @@ function scrollBarTeam() {
 
 
 if( $(window).width() < 800 ) {
-  scrollBarTeam()
+  scrollBarTeam(".team__row-w")
 }
 
 
 $(window).resize(function() {
   if( $(window).width() < 800 ) {
-    scrollBarTeam()
+    scrollBarTeam(".team__row-w")
+  }
+});
+
+
+
+if( $(window).width() < 1101 ) {
+  scrollBarTeam(".similar__row-w")
+}
+
+
+$(window).resize(function() {
+  if( $(window).width() < 1101 ) {
+    scrollBarTeam(".similar__row-w")
   }
 });
 
@@ -91,6 +104,7 @@ $('.search-objects__slider').slick({
   autoplaySpeed: 0,  
   arrows: true,  
   dots: true,  
+  adaptiveHeight: true
 });
 
 $('.accordion-header').click(function () {
@@ -111,7 +125,24 @@ $( '#example4' ).sliderPro({
   mediumSize: 1000,
   largeSize: 3000,
   thumbnailArrows: true,
-  autoplay: false
+  autoplay: false,
+  breakpoints: {
+    1365: {      
+      width: 852,
+      height: 576
+    },
+    1199: {
+      width: 752,
+      height: 576
+    },
+    1100: {
+      width: 652,
+      height: 576
+    },
+    991: {            
+      fullWidth: true      
+    }
+  }
 });
 
 $( '#example5' ).sliderPro({
@@ -126,7 +157,24 @@ $( '#example5' ).sliderPro({
   mediumSize: 1000,
   largeSize: 3000,
   thumbnailArrows: true,
-  autoplay: false
+  autoplay: false,
+  breakpoints: {
+    1365: {      
+      width: 852,
+      height: 576
+    },
+    1199: {
+      width: 752,
+      height: 576
+    },
+    1100: {
+      width: 652,
+      height: 576
+    },
+    991: {            
+      fullWidth: true,      
+    }
+  }
 });
 
 /************************************/
@@ -237,6 +285,11 @@ $('.search-actions__radio').change(function() {
     $('.search-actions__checkbox').prop("checked", false)    
   }  
 });
+
+
+$('.accordion-content').addClass('open-content');
+
+
 
 
 }); //ready
